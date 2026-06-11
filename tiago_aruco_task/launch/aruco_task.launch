@@ -1,0 +1,19 @@
+<launch>
+  <!-- Spawn ArUco markers in Gazebo -->
+  <include file="$(find tiago_aruco_task)/launch/spawn_markers.launch"/>
+
+  <!-- ArUco marker publisher using TIAGo's xtion camera -->
+  <node pkg="aruco_ros" type="marker_publisher" name="aruco_marker_publisher"
+        output="screen">
+    <remap from="/camera_info" to="/xtion/rgb/camera_info"/>
+    <remap from="/image"       to="/xtion/rgb/image_rect_color"/>
+    <param name="image_is_rectified" value="true"/>
+    <param name="marker_size"        value="0.16"/>
+    <param name="reference_frame"    value="base_footprint"/>
+    <param name="camera_frame"       value="xtion_rgb_optical_frame"/>
+  </node>
+
+  <!-- Scanner node -->
+  <node pkg="tiago_aruco_task" type="aruco_scanner.py"
+        name="aruco_scanner" output="screen"/>
+</launch>

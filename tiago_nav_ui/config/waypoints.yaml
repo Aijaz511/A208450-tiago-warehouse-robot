@@ -1,0 +1,18 @@
+waypoints:
+  Delivery_Zone:
+    x: 2.9813
+    y: 2.1394
+    yaw: 0.263
+    description: "Blue Disc - Delivery Zone"
+
+  Processing_Zone:
+    x: -1.3212
+    y: -0.9821
+    yaw: 2.887
+    description: "Green Disc - Processing Zone"
+
+  Pickup_Zone:
+    x: -3.7234
+    y: 1.6094
+    yaw: 0.130
+    description: "Red Disc - Pickup Zone"

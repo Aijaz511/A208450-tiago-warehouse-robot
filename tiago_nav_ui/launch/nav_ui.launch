@@ -1,0 +1,4 @@
+<launch>
+  <node name="tiago_nav_ui" pkg="tiago_nav_ui"
+        type="nav_ui.py" output="screen"/>
+</launch>

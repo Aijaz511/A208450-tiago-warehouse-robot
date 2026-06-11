@@ -1,0 +1,8 @@
+<launch>
+  <!-- ArUco markers + scanner -->
+  <include file="$(find tiago_aruco_task)/launch/aruco_task.launch"/>
+
+  <!-- Navigation UI -->
+  <node pkg="tiago_nav_ui" type="nav_ui.py"
+        name="tiago_nav_ui" output="screen"/>
+</launch>

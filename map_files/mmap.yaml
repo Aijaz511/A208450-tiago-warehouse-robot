@@ -1,0 +1,7 @@
+poi:
+  submap_0:
+    poi_0001: [submap_0, Delivery_Zone, 2.9813, 2.1394, 0.263]
+    poi_0002: [submap_0, Processing_Zone, -1.3212, -0.9821, 2.887]
+    poi_0003: [submap_0, Pickup_Zone, -3.7234, 1.6094, 0.130]
+visualLoc:
+  submap_0: {databaseName: databases/tree}
